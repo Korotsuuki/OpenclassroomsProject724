@@ -57,11 +57,11 @@ const Slider = () => {
         <div className="SlideCard__pagination">
           {byDateDesc.map(
             (
-              event,
+              radio,
               radioIdx // Mapping des événements pour les boutons de la pagination
             ) => (
               <input
-                key={event.id} // Clé unique pour chaque bouton
+                key={radio.title} // Clé unique pour chaque bouton
                 type="radio"
                 name="radio-button"
                 value={radioIdx}
